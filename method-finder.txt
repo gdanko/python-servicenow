@@ -1,0 +1,126 @@
+
+
+grep -e "^\tdef " servicenow/client.py | grep _find | sort
+	def application_find(self):
+	def asset_find(self):
+	def change_request_find(self):
+	def change_task_find(self):
+	def ci_find(self):
+	def colo_find(self):
+	def conference_room_find(self, site=None, building=None, floor=None):
+	def db_instance_find(self):
+	def docker_container_find(self):
+	def docker_engine_find(self):
+	def docker_global_image_find(self):
+	def docker_image_tag_find(self):
+	def docker_local_image_find(self):
+	def group_find(self):
+	def host_find(self):
+	def incident_find(self):
+	def incident_task_find(self):
+	def label_entry_find(self):
+	def major_incident_find(self):
+	def netgear_find(self):
+	def outage_find(self):
+	def problem_find(self):
+	def sc_req_item_find(self):
+	def sc_request_find(self):
+	def sc_task_find(self):
+	def security_appliance_find(self):
+	def storage_device_find(self):
+	def storage_qtree_find(self):
+	def storage_volume_find(self):
+	def user_find(self):
+	def vpc_find(self):
+	def vpn_find(self):
+
+grep -e "^\tdef " servicenow/client.py | grep _get | sort
+    def change_request_get(self, number=None):
+    def change_task_get(self, number=None):
+    def ci_get(self, name=None):
+    def colo_get(self, name=None):
+    def conference_room_get(self, name=None):
+    def db_instance_get(self, name=None):
+    def group_get(self, name=None):
+    def host_get(self, name=None):
+    def incident_get(self, number=None):
+    def incident_task_get(self, number=None):
+    def outage_get(self, number=None):
+    def problem_get(self, number=None):
+    def sc_req_item_get(self, number=None):
+    def sc_request_get(self, number=None):
+    def sc_task_get(self, number=None):
+    def user_get(self, name=None, username=None, email=None):
+
+grep -e "^\tdef " servicenow/client.py | grep _create | sort
+    def change_request_create(self, content=None):
+    def change_task_create(self, content=None):
+    def incident_create(self, content=None):
+    def major_incident_create(self, content=None):
+    def problem_create(self, content=None):
+    def sc_req_item_create(self, content=None):
+    def sc_request_create(self, content=None):
+    def sc_task_create(self, content=None):
+
+# For documentation
+grep -e "^\tdef " servicenow/client.py | grep -v generic | sort
+    def add(self, var=None, op=None, value=None):
+    def application_find(self):
+    def asset_find(self):
+    def change_request_create(self, content=None):
+    def change_request_find(self):
+    def change_request_get(self, number=None):
+    def change_task_create(self, content=None):
+    def change_task_find(self):
+    def change_task_get(self, number=None):
+    def ci_find(self):
+    def ci_get(self, name=None):
+    def clear(self):
+    def colo_find(self):
+    def colo_get(self, name=None):
+    def conference_room_find(self, site=None, building=None, floor=None):
+    def conference_room_get(self, name=None):
+    def count(self):
+    def db_instance_find(self):
+    def db_instance_get(self, name=None):
+    def delete(self, var=None):
+    def docker_container_find(self):
+    def docker_engine_find(self):
+    def docker_global_image_find(self):
+    def docker_image_tag_find(self):
+    def docker_local_image_find(self):
+    def group_find(self):
+    def group_get(self, name=None):
+    def host_find(self):
+    def host_get(self, name=None):
+    def incident_create(self, content=None):
+    def incident_find(self):
+    def incident_get(self, number=None):
+    def incident_task_find(self):
+    def incident_task_get(self, number=None):
+    def label_entry_find(self):
+    def major_incident_create(self, content=None):
+    def major_incident_find(self):
+    def netgear_find(self):
+    def outage_find(self):
+    def outage_get(self, number=None):
+    def problem_create(self, content=None):
+    def problem_find(self):
+    def problem_get(self, number=None):
+    def sc_req_item_create(self, content=None):
+    def sc_req_item_find(self):
+    def sc_req_item_get(self, number=None):
+    def sc_request_create(self, content=None):
+    def sc_request_find(self):
+    def sc_request_get(self, number=None):
+    def sc_task_create(self, content=None):
+    def sc_task_find(self):
+    def sc_task_get(self, number=None):
+    def security_appliance_find(self):
+    def storage_device_find(self):
+    def storage_qtree_find(self):
+    def storage_volume_find(self):
+    def user_find(self):
+    def user_get(self, name=None, username=None, email=None):
+    def vpc_find(self):
+    def vpn_find(self):

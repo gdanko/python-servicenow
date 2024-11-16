@@ -1,0 +1,348 @@
+{
+	"incident": {
+		"parameters": {
+			"impact": {
+				"valid": {
+					"high": 1,
+					"medium": 2,
+					"low": 3
+				}
+			},
+			"urgency": {
+				"valid": {
+					"high": 1,
+					"medium": 2,
+					"low": 3
+				}
+			},
+			"priority": {
+				"valid": {
+					"critical": 1,
+					"high": 2,
+					"moderate": 3,
+					"low": 4,
+					"planning": 5
+				}
+			},
+			"state": {
+				"valid": {
+					"open": 1,
+					"assigned": -1,
+					"in progress": 2,
+					"pending": -5,
+					"resolved": 6,
+					"closed": 7,
+					"cancelled": 8
+				}
+			},
+			"contact_type": {
+				"valid": {
+					"email": "email",
+					"phone": "phone",
+					"self-service": "self-service",
+					"walk-in": "walk-in",
+					"monitoring": "Monitoring"
+				}
+			}
+		}
+	},
+	"major_incident": {
+		"parameters": {
+			"impact": {
+				"valid": {
+					"high": 1,
+					"medium": 2,
+					"low": 3
+				}
+			},
+			"urgency": {
+				"valid": {
+					"high": 1,
+					"medium": 2,
+					"low": 3
+				}
+			},
+			"priority": {
+				"valid": {
+					"critical": 1,
+					"high": 2,
+					"moderate": 3,
+					"low": 4,
+					"planning": 5
+				}
+			},
+			"state": {
+				"valid": {
+					"open": 1,
+					"assigned": -1,
+					"in progress": 2,
+					"pending": -5,
+					"resolved": 6,
+					"closed": 7,
+					"cancelled": 8
+				}
+			},
+			"contact_type": {
+				"valid": {
+					"email": "email",
+					"phone": "phone",
+					"self-service": "self-service",
+					"walk-in": "walk-in",
+					"monitoring": "Monitoring"
+				}
+			}
+		}
+	},
+	"incident_task": {
+		"parameters": {
+			"priority": {
+				"valid": {
+					"critical": 1,
+					"high": 2,
+					"moderate": 3,
+					"low": 4,
+					"planning": 5
+				}
+			},
+			"state": {
+				"valid": {
+					"pending": -5,
+					"open": 1,
+					"work in progress": 2,
+					"closed": 3,
+					"closed complete": 3,
+					"cancelled": 8
+				}
+			},
+			"parent": {
+				"target": "u_ud_parent.number",
+				"valid": {}
+			}
+		}
+	},
+	"problem": {
+		"parameters": {
+			"priority": {
+				"valid": {
+					"critical": 1,
+					"high": 2,
+					"moderate": 3,
+					"low": 4,
+					"planning": 5
+				}
+			},
+			"state": {
+				"valid": {
+					"open": 1,
+					"post mortem complete": 10,
+					"in progress": 11,
+					"on hold": 12,
+					"closed": 4
+				}
+			},
+			"type": {
+				"target": "u_sub_type",
+				"valid": {
+					"proactive": "Proactive",
+					"reactive": "Reactive"
+				}
+			}
+		}
+	},
+	"change_request": {
+		"parameters": {
+			"category": {
+				"valid": {
+					"application": "Application",
+					"database": "Database",
+					"facilities": "Facilities",
+					"hardware": "Hardware",
+					"network": "Network",
+					"server": "Server",
+					"storage": "Storage",
+					"telecom": "Telecom"
+				}
+			},
+			"template": {
+				"target": "u_template"
+			},
+			"environment": {
+				"target": "u_environment"
+			},
+			"qa_approver": {
+				"target": "u_qa_approver"
+			},
+			"sub_category": {
+				"target": "u_sub_category"
+			},
+			"client": {
+				"target": "u_client"
+			},
+			"risk": {
+				"valid": {
+					"high": 1,
+					"medium": 2,
+					"low": 3
+				}
+			},
+			"approval": {
+				"valid": {
+					"not yet requested": "not requested",
+					"requested": "requested",
+					"approved": "approved",
+					"rejected": "rejected"
+				}
+			},
+			"priority": {
+				"valid": {
+					"critical": 1,
+					"high": 2,
+					"moderate": 3,
+					"low": 4,
+					"planning": 5
+				}
+			},
+			"type": {
+				"valid": {
+					"standard": "Standard",
+					"normal": "Normal",
+					"emergency": "Emergency"
+				}
+			},
+			"state": {
+				"valid": {
+					"draft": -40,
+					"new": -30,
+					"pending approval": -20,
+					"scheduled": -10,
+					"in progress": 1,
+					"implemented": 2,
+					"closed": 3,
+					"cancelled": 4,
+					"rejected": 4,
+					"cancelled/rejected": 4
+				}
+			},
+			"potential_impact": {
+				"target": "impact",
+				"valid": {
+					"critical": 1,
+					"major": 2,
+					"minor": 3
+				}
+			},
+			"environment": {
+				"target": "u_environment",
+				"valid": {
+					"build": "Build (bld)",
+					"data_migration": "Data Migration (mig)",
+					"development": "Development (dev)",
+					"dev": "Development (dev)",
+					"e2e": "End-to-end (e2e)",
+					"performance": "Performance (prf)",
+					"perf": "Performance (prf)",
+					"prf": "Performance (prf)",
+					"production": "Production (prd)",
+					"prod": "Production (prd)",
+					"prd": "Production (prd)",
+					"pex": "Production Experiment (pex)",
+					"pds": "Production Support (pds)",
+					"qal": "QA/Test (qal)",
+					"qa": "QA/Test (qal)",
+					"rtb": "Run the Business (rtb)",
+					"sbx": "Sandbox (sbx)",
+					"staging": "Staging (stg)",
+					"stg": "Staging (stg)",
+					"training": "Training (trn)",
+					"trn": "Training (trn)",
+					"uat": "User Acceptance Testing (uat)"
+				}
+			}
+		}
+	},
+	"change_task": {
+		"parameters": {
+			"state": {
+				"valid": {
+					"pending": -5,
+					"open": 1,
+					"work in progress": 2,
+					"closed complete": 3,
+					"cancelled": 4
+				}
+			},
+			"type": {
+				"target": "u_sub_type",
+				"valid": {
+					"communication": "Communication",
+					"documentation": "Documentation",
+					"emergency": "Emergency",
+					"implementation": "Implementation",
+					"qa": "QA",
+					"location based": "location_based"
+				}
+			},
+			"priority": {
+				"valid": {
+					"critical": 1,
+					"high": 2,
+					"moderate": 3,
+					"low": 4,
+					"planning": 5
+				}
+			}
+		}
+	},
+	"sc_task": {
+		"parameters": {
+			"state": {
+				"valid": {
+					"open": 1,
+					"pending": -5,
+					"work in progress": 2,
+					"closed": 3,
+					"closed complete": 3,
+					"cancelled": 4
+				}
+			},
+			"parent": {
+				"target": "parent.number"
+			}
+		}
+	},
+	"sc_request": {
+		"parameters": {
+			"approval": {
+				"valid": {
+					"not yet requsted": "not requested",
+					"requested": "requested",
+					"approved": "approved",
+					"rejected": "rejected"
+				}
+			},
+			"request_state": {
+				"valid": {
+					"pending approval": "requested",
+					"approved": "in_process",
+					"closed complete": "closed_complete",
+					"closed incomplete": "closed_incomplete",
+					"closed cancelled": "closed_cancelled",
+					"closed rejected": "closed_rejected"
+				}
+			}
+		}
+	},
+	"sc_req_item": {
+		"parameters": {
+			"state": {
+				"valid": {
+					"open": 1,
+					"pending": -5,
+					"work in progress": 2,
+					"closed complete": 3,
+					"cancelled": 4
+				}
+			}
+		}
+	}
+}
